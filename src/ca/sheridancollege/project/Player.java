@@ -13,7 +13,7 @@ package ca.sheridancollege.project;
  */
 public abstract class Player {
 
-    private String name; //the unique name for this player
+     private String playerID; //the unique ID for this player
 
     /**
      * A constructor that allows you to set the player's unique ID
@@ -21,23 +21,23 @@ public abstract class Player {
      * @param name the unique ID to assign to this player.
      */
     public Player(String name) {
-        this.name = name;
+        this.playerID = name;
     }
 
     /**
      * @return the player name
      */
-    public String getName() {
-        return name;
+    public String getPlayerID() {
+        return playerID;
     }
 
     /**
      * Ensure that the playerID is unique
      *
-     * @param name the player name to set
+     * @param givenID the playerID to set
      */
-    public void setName(String name) {
-        this.name = name;
+    public void setPlayerID(String givenID) {
+        this.playerID = givenID;
     }
 
     /**

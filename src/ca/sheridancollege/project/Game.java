@@ -16,19 +16,19 @@ import java.util.ArrayList;
  */
 public abstract class Game {
 
-    private final String name;//the title of the game
+    private final String gameName;//the title of the game
     private ArrayList<Player> players;// the players of the game
 
-    public Game(String name) {
-        this.name = name;
+    public Game(String givenName) {
+        this.gameName = givenName;
         players = new ArrayList();
     }
 
     /**
      * @return the name
      */
-    public String getName() {
-        return name;
+    public String getGameName() {
+        return gameName;
     }
 
     /**
